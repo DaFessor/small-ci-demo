@@ -1,10 +1,27 @@
-# Fetch Java
-FROM eclipse-temurin:21-jdk-alpine
-# Expose port 8080
+# Stage 1: Build the application
+FROM alpine:3.23 AS build_stage
+
+# Add the necessary extra packages
+RUN apk add --no-cache maven openjdk21-jdk
+
+# Copy the source code and Maven resources
+COPY ./task-service /build/task-service
+COPY ./.m2 /build/.m2
+RUN mkdir -p /build/.mvn && echo "-Dmaven.repo.local=/build/.m2/repository" > /build/.mvn/maven.config
+
+# Build the application
+RUN ls -al /build && cd /build/task-service && mvn -f pom.xml -Dmaven.repo.local=/build/.m2/repository clean package -DskipTests
+
+# Stage 2: Create the runtime image
+FROM eclipse-temurin:21-jre-alpine
+
+WORKDIR /app
+
+# Copy the JAR from builder stage
+COPY --from=build_stage /build/task-service/target/small-ci-demo-1.0.0.jar app.jar
+
+# Expose the port
 EXPOSE 8080
-# Set a docker volume if you want
-VOLUME /backend_volume
-# Add the jar file
-ADD /target/*.jar devops-demo-1.0.jar
-# Start the application
-ENTRYPOINT ["java", "-jar", "/devops-demo-1.0.jar"]
+
+# Run the application
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
