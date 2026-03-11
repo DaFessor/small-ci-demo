@@ -10,11 +10,11 @@
     </parent>
     <groupId>via.doc1</groupId>
     <artifactId>small-ci-demo</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
 
     <name>small-ci-demo</name>
-    <description>Template Project for CI/CD Pipelines</description>
+    <description>Small CI/CD Demo</description>
     <properties>
         <java.version>21</java.version>
     </properties>
