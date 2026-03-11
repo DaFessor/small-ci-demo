@@ -30,4 +30,4 @@ jobs:
 
       - name: Run all tests in project
         run: |
-           mvn compile && mvn test
+           cd task-service && mvn compile && mvn test
