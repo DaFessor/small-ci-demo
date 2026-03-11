@@ -1,10 +1,11 @@
-package via.doc1.devopsdemo.controller;
+package via.doc1.smallcidemo.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import via.doc1.devopsdemo.model.Task;
-import via.doc1.devopsdemo.service.TeamService;
+
+import via.doc1.smallcidemo.model.Task;
+import via.doc1.smallcidemo.service.TeamService;
 
 @RestController
 public class TeamController {
@@ -21,4 +22,3 @@ public class TeamController {
         return teamService.getTask(memberId, taskId);
     }
 }
-

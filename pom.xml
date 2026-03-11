@@ -9,11 +9,11 @@
         <version>3.4.4</version>
     </parent>
     <groupId>via.doc1</groupId>
-    <artifactId>devops-demo</artifactId>
+    <artifactId>small-ci-demo</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>devops-demo</name>
+    <name>small-ci-demo</name>
     <description>Template Project for CI/CD Pipelines</description>
     <properties>
         <java.version>21</java.version>

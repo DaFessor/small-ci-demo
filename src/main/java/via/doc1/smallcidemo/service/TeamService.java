@@ -1,11 +1,12 @@
-package via.doc1.devopsdemo.service;
-
-import org.springframework.stereotype.Service;
-import via.doc1.devopsdemo.model.Task;
-import via.doc1.devopsdemo.model.TeamMember;
+package via.doc1.smallcidemo.service;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import via.doc1.smallcidemo.model.Task;
+import via.doc1.smallcidemo.model.TeamMember;
 
 @Service
 public class TeamService {

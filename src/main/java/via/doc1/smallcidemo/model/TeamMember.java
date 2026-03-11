@@ -1,4 +1,4 @@
-package via.doc1.devopsdemo.model;
+package via.doc1.smallcidemo.model;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package via.doc1.devopsdemo.controller;
+package via.doc1.smallcidemo.controller;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
@@ -12,8 +12,9 @@ import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.RequestBuilder;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
-import via.doc1.devopsdemo.model.Task;
-import via.doc1.devopsdemo.service.TeamService;
+import via.doc1.smallcidemo.controller.TeamController;
+import via.doc1.smallcidemo.model.Task;
+import via.doc1.smallcidemo.service.TeamService;
 
 /**
  * @author jook
