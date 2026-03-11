@@ -34,3 +34,4 @@ build/
 
 ### Maven
 .m2/
+.mvn/maven.config

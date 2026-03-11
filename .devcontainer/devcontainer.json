@@ -23,7 +23,8 @@
 			]
 		}
 	},
-	"postAttachCommand": "doas chgrp wheel /var/run/docker.sock",
+	"postAttachCommand":
+        "doas chgrp wheel /var/run/docker.sock && echo -Dmaven.repo.local=/workspaces/small-ci-demo/.m2/repository > /workspaces/small-ci-demo/.mvn/maven.config",
     "remoteUser": "vscode",
     "mounts": [
         "source=${localEnv:HOME}${localEnv:USERPROFILE}/.m2,target=/workspaces/${localWorkspaceFolderBasename}/.m2,type=bind,consistency=cached",
