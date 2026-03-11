@@ -6,7 +6,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <relativePath/> <!-- lookup parent from repository -->
-        <version>3.4.4</version>
+        <version>3.5.11</version>
     </parent>
     <groupId>via.doc1</groupId>
     <artifactId>small-ci-demo</artifactId>
