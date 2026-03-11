@@ -6,11 +6,19 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"oracle.oracle-java",
+
 				"vscjava.vscode-java-pack",
-				"vmware.vscode-boot-dev-pack",
-				"mhutchie.git-graph",
-				"donjayamanne.githistory",
+                "vscjava.vscode-spring-boot-dashboard",
+                "vscjava.vscode-spring-initializr",
+                "vmware.vscode-spring-boot",
+                "pivotal.vscode-boot-dev-pack",
+                "redhat.java",
+                "vscjava.vscode-maven",
+                "ms-azuretools.vscode-docker",
+                "donjayamanne.githistory",
+                "mhutchie.git-graph",
+                "codezombiech.gitignore",
+                "docker.docker",
 				"peakchen90.open-html-in-browser"
 			]
 		}
