@@ -3,3 +3,4 @@ This repository contains a development container configuration for building and 
 
 ## Features
 - Pre-configured development environment with necessary tools and dependencies for Spring Boot development.
+- Support for popular CI/CD tools such as Jenkins, GitHub Actions, and GitLab CI.
